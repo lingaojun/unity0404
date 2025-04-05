@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public float jumpForce = 7f;
+    public float jumpForce = 10f;
     public float rotationSpeed = 100f;
 
     private Rigidbody rb;
@@ -16,21 +16,19 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // ÒÆ¶¯¿ØÖÆ
+        // ä½ å¥½ï¼Ÿ
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
         transform.Translate(movement * moveSpeed * Time.deltaTime, Space.World);
 
-        // ÌøÔ¾¿ØÖÆ
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isGrounded = false;
         }
 
-        // Ðý×ª¿ØÖÆ
         if (Input.GetKey(KeyCode.Q))
         {
             transform.Rotate(Vector3.up, -rotationSpeed * Time.deltaTime);

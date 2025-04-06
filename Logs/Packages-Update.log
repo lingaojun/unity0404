@@ -44,3 +44,21 @@ The following packages were updated:
   com.unity.collab-proxy from version 1.13.5 to 1.17.2
   com.unity.timeline from version 1.6.2 to 1.7.2
   com.unity.visualscripting from version 1.7.6 to 1.7.8
+
+=== Sat Apr  5 16:29:45 2025
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.render-pipelines.universal from version 12.1.6 to 13.1.8
+
+=== Sat Apr  5 16:29:45 2025
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.cinemachine@2.8.9
+  com.unity.inputsystem@1.4.4
+  com.unity.render-pipelines.universal@13.1.8
